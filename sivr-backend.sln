@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sivr-backend", "sivr-backend\sivr-backend.csproj", "{7C7F7C09-306C-4378-9714-CE6748A5F7F5}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "sivr-backend.db", "sivr-backend.db\sivr-backend.db.sqlproj", "{400E710F-7EEF-412A-BFF1-74A7DCA83BE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C7F7C09-306C-4378-9714-CE6748A5F7F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C7F7C09-306C-4378-9714-CE6748A5F7F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C7F7C09-306C-4378-9714-CE6748A5F7F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C7F7C09-306C-4378-9714-CE6748A5F7F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{400E710F-7EEF-412A-BFF1-74A7DCA83BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{400E710F-7EEF-412A-BFF1-74A7DCA83BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{400E710F-7EEF-412A-BFF1-74A7DCA83BE9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{400E710F-7EEF-412A-BFF1-74A7DCA83BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{400E710F-7EEF-412A-BFF1-74A7DCA83BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{400E710F-7EEF-412A-BFF1-74A7DCA83BE9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF7E8F3E-C02D-4F17-9DF1-EF9E213F876B}
+	EndGlobalSection
+EndGlobal

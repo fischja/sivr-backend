@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="ac833a86-9ca9-47c1-b070-611f2730d9f5" ChangeDateTime="04/03/2020 18:57:29">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="V3C" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e9f6a453-1d75-44da-b73c-22ccc183d52e" ChangeDateTime="04/03/2020 18:57:41">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[V3C]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="V3C_Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c55140ba-6be6-45a4-bb93-5fe48c50b7ca" ChangeDateTime="04/03/2020 19:00:40">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[V3C_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="v3c_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="46d817b4-5ab6-4e52-8a1a-83580a658de0" ChangeDateTime="04/03/2020 19:00:46">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[Width]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="width" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="848a3f61-8b50-447c-b277-ab56c7e95a3a" ChangeDateTime="04/03/2020 19:00:49">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[Height]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="height" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bfa60afb-0dfe-432c-9a3e-f29b258a040c" ChangeDateTime="04/03/2020 19:00:51">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[Duration]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="duration" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8127667b-53fe-4b06-bc49-1a2978075f0f" ChangeDateTime="04/03/2020 19:00:53">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[Title]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="title" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="72c9f1ee-b356-414b-bba8-ae01f8bd7391" ChangeDateTime="04/03/2020 19:01:02">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[FullTitle]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="fulltitle" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4bd49ce0-c2e0-4f05-98b9-833eb9cf648c" ChangeDateTime="04/04/2020 06:06:11">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[v3c_id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="V3CId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="794541d9-bf45-4ae9-94cc-e55734302016" ChangeDateTime="04/04/2020 06:06:14">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[width]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Width" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9e51cc2d-4ac4-40f3-8815-6d64b3e4c0ca" ChangeDateTime="04/04/2020 06:06:18">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[height]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Height" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ba30fb04-8b88-4fbc-86d3-c3f0193ee559" ChangeDateTime="04/04/2020 06:06:20">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[duration]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Duration" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ab61d7dc-47de-42e6-8d89-d742aa3859ce" ChangeDateTime="04/04/2020 06:06:25">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[title]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Title" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fc1ad662-84df-4bf0-a5b7-a0c726d1d271" ChangeDateTime="04/04/2020 06:06:30">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[fulltitle]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FullTitle" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cce43cb3-c7ea-478a-b078-4ac26d13a2b7" ChangeDateTime="04/04/2020 06:06:32">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[description]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Description" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4826cfe9-983f-4421-8eb5-24df82d8db96" ChangeDateTime="04/04/2020 06:06:35">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[licence]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Licence" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a725ff86-0c4a-4991-b9cb-77e240a34f06" ChangeDateTime="04/04/2020 06:06:39">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[extractor]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Extractor" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ac07c674-1415-41af-9cfe-8ad36e0df971" ChangeDateTime="04/04/2020 06:06:43">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[extractor_key]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ExtractorKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="98a594d2-8e5f-4b5b-b6d4-b3f527927412" ChangeDateTime="04/04/2020 06:06:48">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[source_orig_id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SourceOrigId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b3dd153e-8631-44fe-8dd1-636a45a7d63c" ChangeDateTime="04/04/2020 06:06:55">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[source_orig_filename]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SourceOrigFilename" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d4b010b1-4c62-42d8-8a95-35a870df8b32" ChangeDateTime="04/04/2020 06:07:00">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[display_id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DisplayId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c9b171cf-1d63-4311-998f-7f9305297ef9" ChangeDateTime="04/04/2020 06:07:07">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[webpage_url]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WebpageUrl" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f4c5aef5-6c5b-4fc8-a40c-dbdda88e8a7e" ChangeDateTime="04/04/2020 06:07:11">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[webpage_url_basename]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WebpageUrlBasename" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6862c73c-c67b-4fef-8907-20e27c48cfb6" ChangeDateTime="04/04/2020 06:07:14">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[thumbnail]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Thumbnail" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="303728fc-58c1-4d9b-a2aa-27b51d3fe135" ChangeDateTime="04/04/2020 06:07:16">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[format]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Format" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d33f3fd1-0a78-4e57-83cd-8e03469f15bb" ChangeDateTime="04/04/2020 06:07:20">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[format_id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FormatId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="55714112-bd5f-409c-b9b3-52f620ed91e0" ChangeDateTime="04/04/2020 06:07:27">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[source_timestamp]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SourceTimestamp" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="30b52d51-b447-48d7-ba8a-c5208e2d32d9" ChangeDateTime="04/04/2020 06:07:29">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[resolution]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Resolution" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="aa35d859-044b-41b1-aff0-190e4e250ace" ChangeDateTime="04/04/2020 06:07:32">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[stretched_ratio]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StretchedRatio" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6fae5a78-38e9-494a-8147-ce821ff4f9a5" ChangeDateTime="04/04/2020 06:07:35">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[fps]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Fps" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bec7c881-3d88-41f5-807a-d5b3d953c862" ChangeDateTime="04/04/2020 06:07:39">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[abr]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Abr" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="28227899-cb81-4dec-8b64-7b185cd1cff5" ChangeDateTime="04/04/2020 06:07:41">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[vbr]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Vbr" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="05664e47-ff39-408e-9569-83a36ebcf768" ChangeDateTime="04/04/2020 06:07:44">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[ext]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Ext" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6b1fc5b5-eeed-4851-bfcb-603c2c49d2b9" ChangeDateTime="04/04/2020 06:07:48">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[acodec]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ACodec" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d393a430-17bc-4b15-b01d-e2daf0e0f9dc" ChangeDateTime="04/04/2020 06:07:51">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[vcodec]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="VCodec" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0fb4351c-d068-4054-a11c-4b370401edd0" ChangeDateTime="04/04/2020 06:07:53">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[channel]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Channel" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="808ed104-bf1f-4aac-b0fc-2bdf4388a1ee" ChangeDateTime="04/04/2020 06:07:55">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[uploader]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Uploader" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3b56b18a-b4bc-4e0a-916b-524869d61fdf" ChangeDateTime="04/04/2020 06:07:59">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[uploader_id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UploaderId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ec64ee9f-57ed-4b9c-9adc-a6fdfd46c3ad" ChangeDateTime="04/04/2020 06:08:09">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[uploader_url]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UploaderUrl" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="71421f4b-c689-41c1-98a8-b39f592e0f10" ChangeDateTime="04/04/2020 06:08:15">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[upload_date]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UploadDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fd5f18c8-2dbf-462b-9d8f-80e87e1cafa5" ChangeDateTime="04/04/2020 06:08:17">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[view_count]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ViewCount" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ccb35869-3519-40d0-ab02-9f690b7ce845" ChangeDateTime="04/04/2020 06:08:20">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[like_count]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LikeCount" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2dd419aa-aebb-45f0-b7c6-5f71d4a626c0" ChangeDateTime="04/04/2020 06:08:24">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[comment_count]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CommentCount" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="961d10b8-644d-42e0-b179-bb10d5b21cc3" ChangeDateTime="04/04/2020 06:08:26">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[playlist]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Playlist" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c0381484-0073-4e46-87ca-23eb800c3826" ChangeDateTime="04/04/2020 06:08:29">
+    <Property Name="ElementName" Value="[dbo].[MetaData].[playlist_index]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PlaylistIndex" />
+  </Operation>
+</Operations>

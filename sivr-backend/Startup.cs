@@ -28,12 +28,22 @@ namespace sivr_backend
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(
+                builder =>
+                {
+                    builder.WithOrigins("http://localhost:4200/").AllowAnyOrigin();
+                });
+            });
+
             services.AddDbContext<SivrContext>(opt =>
                 //opt.UseInMemoryDatabase("VideoMetaInfoList"));
                 opt.UseSqlServer(Configuration.GetConnectionString("SivrDb")));
             services.AddControllers();
 
             services.AddScoped<IMetaDataRepository, MetaDataRepository>();
+            services.AddScoped<IThumbnailRepository, ThumbnailRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,6 +57,8 @@ namespace sivr_backend
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors();
 
             app.UseAuthorization();
 

@@ -11,21 +11,25 @@ namespace sivr_backend.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class QueryController
+    public class QueryController : Controller
     {
         private readonly IMetaDataRepository _metaDataRepository;
+        private readonly IThumbnailRepository _thumbnailRepository;
 
-        public QueryController(IMetaDataRepository metaDataRepository)
+        public QueryController(IMetaDataRepository metaDataRepository, IThumbnailRepository thumbnailRepository)
         {
             _metaDataRepository = metaDataRepository;
+            _thumbnailRepository = thumbnailRepository;
         }
 
         // GET: api/query
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<MetaData>>> GetVideoResults([FromQuery] String text)
+        public async Task<ActionResult<IEnumerable<MetaDataDTO>>> GetVideoResults([FromQuery] String text)
         {
             var results = await _metaDataRepository.Get(text);
-            return results.ToList();
+            return results
+                .Select(x => new MetaDataDTO() { V3CId = x.V3CId })
+                .ToList();
         }
     }
 }

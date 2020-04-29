@@ -1,0 +1,4 @@
+﻿CREATE TABLE [dbo].[Video]
+(
+	[V3CId] SMALLINT NOT NULL PRIMARY KEY CHECK([V3CId] > 0)
+)

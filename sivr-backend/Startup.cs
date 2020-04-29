@@ -44,6 +44,7 @@ namespace sivr_backend
 
             services.AddScoped<IMetaDataRepository, MetaDataRepository>();
             services.AddScoped<IThumbnailRepository, ThumbnailRepository>();
+            services.AddScoped<IImageNetConceptRepository, ImageNetConceptRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

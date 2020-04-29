@@ -315,4 +315,60 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="PlaylistIndex" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="9d4d5c98-4f16-4fd6-8881-a63d6f224e97" ChangeDateTime="04/27/2020 05:15:07">
+    <Property Name="ElementName" Value="[dbo].[ImageNetConcept].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ImageNetConcept]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ImageNetConceptId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="01673a2b-4488-417c-92bf-fdd04f3bdd2f" ChangeDateTime="04/27/2020 05:17:09">
+    <Property Name="ElementName" Value="[dbo].[ImageNetConceptNames]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[ImageNetConceptName]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="548ed27a-a298-4eec-9e21-4074e0a3c0e0" ChangeDateTime="04/27/2020 05:18:14">
+    <Property Name="ElementName" Value="[dbo].[ImageNetConceptName].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ImageNetConceptName]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ImageNetConceptId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="89306e31-9092-4eb6-8cdc-4e8beaab269b" ChangeDateTime="04/27/2020 05:21:24">
+    <Property Name="ElementName" Value="[dbo].[ImageNetConceptScore].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ImageNetConceptScore]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ImageNetConceptScoreId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5ed65cbb-ad3e-4669-9f4d-a4353c128a3e" ChangeDateTime="04/27/2020 05:28:43">
+    <Property Name="ElementName" Value="[dbo].[ImageNetConceptName].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ImageNetConceptName]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ImageNetConceptNameId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2b515ade-be58-408f-86eb-d3f47c01348c" ChangeDateTime="04/27/2020 05:32:08">
+    <Property Name="ElementName" Value="[dbo].[Keyframe].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Keyframe]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="V3CId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2c7f9574-4217-47a7-bd73-2b5e24990da6" ChangeDateTime="04/27/2020 05:32:31">
+    <Property Name="ElementName" Value="[dbo].[Keyframe].[V3CId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Keyframe]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="KeyframeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0f3d235f-a332-412b-9c46-082dcc4687bc" ChangeDateTime="04/28/2020 20:11:39">
+    <Property Name="ElementName" Value="[dbo].[ImageNetConceptScore].[KeyframeId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ImageNetConceptScore]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="V3CId" />
+  </Operation>
 </Operations>

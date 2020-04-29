@@ -11,7 +11,7 @@ namespace sivr_backend.Repositories
         public FileStream Get(int v3cId, int frame)
         {
             var folderId = v3cId.ToString("D" + 5);
-            var filePath = @$"C:\Users\fisch\Dropbox\UZH Interactive Video Retrieval\sample_data\thumbnails\{folderId}\shot{folderId}_{frame}.png";
+            var filePath = @$"D:\Interactive Video Retrieval\thumbnails\thumbnails\{folderId}\shot{folderId}_{frame}.png";
 
             if (!File.Exists(filePath)) 
             {

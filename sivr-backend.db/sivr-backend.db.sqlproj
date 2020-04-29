@@ -59,6 +59,11 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="MetaData.sql" />
+    <Build Include="ImageNetConcept.sql" />
+    <Build Include="ImageNetConceptNames.sql" />
+    <Build Include="ImageNetConceptScore.sql" />
+    <Build Include="Video.sql" />
+    <Build Include="Keyframe.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="sivr-backend.db.refactorlog" />

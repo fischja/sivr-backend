@@ -15,6 +15,7 @@ namespace sivr_backend.Models
 
         public DbSet<MetaData> MetaDatas { get; set; }
         public DbSet<ImageNetConceptScore> ImageNetConceptScores { get; set; }
+        public DbSet<ColorScore> ColorScores { get; set; }
         public DbSet<ImageNetConceptName> ImageNetConceptNames { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -66,9 +67,28 @@ namespace sivr_backend.Models
                 entity.ToTable(nameof(ImageNetConceptScore));
 
                 entity.HasKey(x => new { x.V3CId, x.KeyframeNumber, x.ImageNetConceptId });
-                entity.HasOne(x => x.ImageNetConcept);
-                entity.HasOne(x => x.Keyframe);
+                
+                entity.HasOne(x => x.ImageNetConcept)
+                .WithMany()
+                .HasForeignKey(x => x.ImageNetConceptId);
+                
+                entity.HasOne(x => x.Keyframe)
+                .WithMany()
+                .HasForeignKey(x => new { x.V3CId, x.KeyframeNumber });
+                
                 entity.HasIndex(x => x.ImageNetConceptId);
+                entity.HasIndex(x => x.Score);
+            });
+
+            modelBuilder.Entity<ColorScore>(entity =>
+            {
+                entity.ToTable(nameof(ColorScore));
+
+                entity.HasKey(x => new { x.V3CId, x.KeyframeNumber, x.ColorId });
+                entity.HasOne(x => x.Keyframe)
+                .WithMany()
+                .HasForeignKey(x => new { x.V3CId, x.KeyframeNumber });
+                entity.HasIndex(x => x.ColorId);
                 entity.HasIndex(x => x.Score);
             });
         }

@@ -21,9 +21,15 @@ namespace sivr_backend.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<QueryResultDTO> Get([FromQuery] int id)
+        public IEnumerable<QueryResultDTO> Get(
+            [FromQuery] int conceptId, 
+            [FromQuery] int queryMode,
+            [FromQuery] string colorId)
         {
-            return _imageNetConceptRepo.GetConceptMatches(id);
+            queryMode = Math.Max(0, queryMode);
+            queryMode = Math.Min(2, queryMode);
+
+            return _imageNetConceptRepo.GetConceptMatches(conceptId, colorId, queryMode);
         }
     }
 }

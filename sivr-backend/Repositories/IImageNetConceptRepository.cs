@@ -10,6 +10,6 @@ namespace sivr_backend.Repositories
     {
         Task<Dictionary<string, short>> GetNameToIdMap();
 
-        IEnumerable<QueryResultDTO> GetConceptMatches(int conceptId);
+        IEnumerable<QueryResultDTO> GetConceptMatches(int conceptId, string colorId, int queryMode);
     }
 }

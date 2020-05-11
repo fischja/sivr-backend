@@ -7,12 +7,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace sivr_backend.Controllers
 {
-    [Route("vbs/submit/")]
+    [Route("/vbs/submit")]
     [ApiController]
     public class SubmissionTestController : Controller
     {
-        [HttpPost]
-        public ActionResult Post(
+        [HttpGet]
+        public ActionResult Get(
             [FromQuery] int team,
             [FromQuery] int member,
             [FromQuery] int video,

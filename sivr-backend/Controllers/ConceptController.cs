@@ -21,9 +21,9 @@ namespace sivr_backend.Controllers
 
         // GET: api/<controller>
         [HttpGet]
-        public async Task<ActionResult<Dictionary<string, short>>> Get()
+        public ActionResult<Dictionary<string, short>> Get()
         {
-            return await _imageNetConceptRepo.GetNameToIdMap();
+            return _imageNetConceptRepo.GetNameToIdMap();
         }
     }
 }

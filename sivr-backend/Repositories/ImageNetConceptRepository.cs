@@ -22,11 +22,22 @@ namespace sivr_backend.Repositories
         {
             if (queryMode == 0)
             {
-                return _context.ImageNetConceptScores
-                .Where(x => x.ImageNetConceptId == conceptId)
-                .OrderByDescending(x => x.Score)
-                .Take(203)
-                .Select(x => new QueryResultDTO() { V3CId = x.V3CId, KeyframeNumber = x.KeyframeNumber });
+                if (conceptId >= 1000)
+                {
+                    return _context.OpenImagesConceptScores
+                        .Where(x => x.OpenImagesConceptId == conceptId)
+                        .OrderByDescending(x => x.Score)
+                        .Take(203)
+                        .Select(x => new QueryResultDTO() { V3CId = x.V3CId, KeyframeNumber = x.KeyframeNumber });
+                }
+                else
+                {
+                    return _context.ImageNetConceptScores
+                        .Where(x => x.ImageNetConceptId == conceptId)
+                        .OrderByDescending(x => x.Score)
+                        .Take(203)
+                        .Select(x => new QueryResultDTO() { V3CId = x.V3CId, KeyframeNumber = x.KeyframeNumber });
+                }
             }
             else if (queryMode == 2)
             {
@@ -38,23 +49,51 @@ namespace sivr_backend.Repositories
             }
             else 
             {
-                return _context.ImageNetConceptScores
-                .Where(x => x.ImageNetConceptId == conceptId)
-                .OrderByDescending(x => x.Score)
-                .Take(203)
-                .ToList()
-                .Select(x => new { 
-                    V3CId = x.V3CId, 
-                    KeyframeNumber = x.KeyframeNumber, 
-                    Score = _context.ColorScores.Find(x.V3CId, x.KeyframeNumber, colorId).Score})
-                .OrderBy(x => x.Score)
-                .Select(x => new QueryResultDTO() { V3CId = x.V3CId, KeyframeNumber = x.KeyframeNumber });
+                if (conceptId >= 1000)
+                {
+                    return _context.OpenImagesConceptScores
+                        .Where(x => x.OpenImagesConceptId == conceptId)
+                        .OrderByDescending(x => x.Score)
+                        .Take(203)
+                        .ToList()
+                        .Select(x => new
+                        {
+                            V3CId = x.V3CId,
+                            KeyframeNumber = x.KeyframeNumber,
+                            Score = _context.ColorScores.Find(x.V3CId, x.KeyframeNumber, colorId).Score
+                        })
+                        .OrderBy(x => x.Score)
+                        .Select(x => new QueryResultDTO() { V3CId = x.V3CId, KeyframeNumber = x.KeyframeNumber });
+                }
+                else
+                {
+                    return _context.ImageNetConceptScores
+                        .Where(x => x.ImageNetConceptId == conceptId)
+                        .OrderByDescending(x => x.Score)
+                        .Take(203)
+                        .ToList()
+                        .Select(x => new
+                        {
+                            V3CId = x.V3CId,
+                            KeyframeNumber = x.KeyframeNumber,
+                            Score = _context.ColorScores.Find(x.V3CId, x.KeyframeNumber, colorId).Score
+                        })
+                        .OrderBy(x => x.Score)
+                        .Select(x => new QueryResultDTO() { V3CId = x.V3CId, KeyframeNumber = x.KeyframeNumber });
+                }
             }
         }
 
-        public async Task<Dictionary<string, short>> GetNameToIdMap()
+        public Dictionary<string, short> GetNameToIdMap()
         {
-            return await _context.ImageNetConceptNames.ToDictionaryAsync(x => x.Name, x => x.ImageNetConceptId);
+            var _imageNetConceptNames = _context.ImageNetConceptNames
+                .ToDictionary(x => x.Name, x => x.ImageNetConceptId);
+            var _openImagesConceptNames = _context.OpenImagesConcepts
+                .ToDictionary(x => x.OpenImagesConceptName, x => x.OpenImagesConceptId);
+
+            return _imageNetConceptNames.Concat(_openImagesConceptNames)
+                .GroupBy(kvp => kvp.Key, kvp => kvp.Value)
+                .ToDictionary(g => g.Key, g => g.Last());
         }
     }
 }

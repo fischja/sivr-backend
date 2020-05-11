@@ -8,7 +8,7 @@ namespace sivr_backend.Repositories
 {
     public interface IImageNetConceptRepository
     {
-        Task<Dictionary<string, short>> GetNameToIdMap();
+        Dictionary<string, short> GetNameToIdMap();
 
         IEnumerable<QueryResultDTO> GetConceptMatches(int conceptId, string colorId, int queryMode);
     }

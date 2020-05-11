@@ -15,6 +15,8 @@ namespace sivr_backend.Models
 
         public DbSet<MetaData> MetaDatas { get; set; }
         public DbSet<ImageNetConceptScore> ImageNetConceptScores { get; set; }
+        public DbSet<OpenImagesConceptScore> OpenImagesConceptScores { get; set; }
+        public DbSet<OpenImagesConcept> OpenImagesConcepts { get; set; }
         public DbSet<ColorScore> ColorScores { get; set; }
         public DbSet<ImageNetConceptName> ImageNetConceptNames { get; set; }
 
@@ -48,6 +50,13 @@ namespace sivr_backend.Models
                 entity.HasOne(x => x.ImageNetConcept);
             });
 
+            modelBuilder.Entity<OpenImagesConcept>(entity =>
+            {
+                entity.ToTable(nameof(OpenImagesConcept));
+
+                entity.HasKey(x => x.OpenImagesConceptId);
+            });
+
             modelBuilder.Entity<Video>(entity =>
             {
                 entity.ToTable(nameof(Video));
@@ -77,6 +86,24 @@ namespace sivr_backend.Models
                 .HasForeignKey(x => new { x.V3CId, x.KeyframeNumber });
                 
                 entity.HasIndex(x => x.ImageNetConceptId);
+                entity.HasIndex(x => x.Score);
+            });
+
+            modelBuilder.Entity<OpenImagesConceptScore>(entity =>
+            {
+                entity.ToTable(nameof(OpenImagesConceptScore));
+
+                entity.HasKey(x => new { x.V3CId, x.KeyframeNumber, x.OpenImagesConceptId });
+
+                entity.HasOne(x => x.OpenImagesConcept)
+                .WithMany()
+                .HasForeignKey(x => x.OpenImagesConceptId);
+
+                entity.HasOne(x => x.Keyframe)
+                .WithMany()
+                .HasForeignKey(x => new { x.V3CId, x.KeyframeNumber });
+
+                entity.HasIndex(x => x.OpenImagesConceptId);
                 entity.HasIndex(x => x.Score);
             });
 

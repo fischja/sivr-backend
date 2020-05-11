@@ -378,4 +378,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ColorId" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="f34c29b3-deb3-4eb6-a910-4223670c3605" ChangeDateTime="05/07/2020 05:54:54">
+    <Property Name="ElementName" Value="[dbo].[OpenImagesConceptScore].[OpenImagesConceptId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[OpenImagesConceptScore]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="OpenImagesConceptName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a20f1e31-db43-4457-81cf-9c3071745459" ChangeDateTime="05/07/2020 06:50:19">
+    <Property Name="ElementName" Value="[dbo].[OpenImagesConcept].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[OpenImagesConcept]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="OpenImagesConceptId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8d665157-419a-4e2e-b77d-0362727c8685" ChangeDateTime="05/07/2020 06:50:51">
+    <Property Name="ElementName" Value="[dbo].[OpenImagesConceptScore].[OpenImagesConceptName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[OpenImagesConceptScore]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="OpenImagesConceptId" />
+  </Operation>
 </Operations>

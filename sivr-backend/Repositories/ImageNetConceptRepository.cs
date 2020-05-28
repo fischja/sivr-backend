@@ -27,7 +27,7 @@ namespace sivr_backend.Repositories
                     return _context.OpenImagesConceptScores
                         .Where(x => x.OpenImagesConceptId == conceptId)
                         .OrderByDescending(x => x.Score)
-                        .Take(203)
+                        .Take(1000)
                         .Select(x => new QueryResultDTO() { V3CId = x.V3CId, KeyframeNumber = x.KeyframeNumber });
                 }
                 else
@@ -35,7 +35,7 @@ namespace sivr_backend.Repositories
                     return _context.ImageNetConceptScores
                         .Where(x => x.ImageNetConceptId == conceptId)
                         .OrderByDescending(x => x.Score)
-                        .Take(203)
+                        .Take(1000)
                         .Select(x => new QueryResultDTO() { V3CId = x.V3CId, KeyframeNumber = x.KeyframeNumber });
                 }
             }
@@ -44,7 +44,7 @@ namespace sivr_backend.Repositories
                 return _context.ColorScores
                 .Where(x => x.ColorId == colorId)
                 .OrderBy(x => x.Score)
-                .Take(203)
+                .Take(1000)
                 .Select(x => new QueryResultDTO() { V3CId = x.V3CId, KeyframeNumber = x.KeyframeNumber });
             }
             else 
@@ -54,7 +54,7 @@ namespace sivr_backend.Repositories
                     return _context.OpenImagesConceptScores
                         .Where(x => x.OpenImagesConceptId == conceptId)
                         .OrderByDescending(x => x.Score)
-                        .Take(203)
+                        .Take(1000)
                         .ToList()
                         .Select(x => new
                         {
@@ -70,7 +70,7 @@ namespace sivr_backend.Repositories
                     return _context.ImageNetConceptScores
                         .Where(x => x.ImageNetConceptId == conceptId)
                         .OrderByDescending(x => x.Score)
-                        .Take(203)
+                        .Take(1000)
                         .ToList()
                         .Select(x => new
                         {
